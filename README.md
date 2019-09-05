@@ -1,2 +1,2 @@
-# SoongSil_University_C-
+# SoongSil_University_Cpp
 Learning C++ in SoongSil University
