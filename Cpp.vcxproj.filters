@@ -17,4 +17,9 @@
       <UniqueIdentifier>{f23fc8db-ba18-47d9-9704-a2e9ef5c33a2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files\Source</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
