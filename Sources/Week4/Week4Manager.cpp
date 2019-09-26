@@ -12,9 +12,11 @@ void Week4Manager::Main()
 {
 	std::cout << "Week 4 Main Start" << std::endl;
 
-	stdCoutTest();
+	//stdCoutTest();
+	stdCinTest();
 }
 
+// private func
 void Week4Manager::stdCoutTest()
 {
 	std::cout << 7;
@@ -24,4 +26,21 @@ void Week4Manager::stdCoutTest()
 	std::cout << 3;
 	std::cout << 3 << std::endl;
 	std::cout << 2;
+}
+
+void Week4Manager::stdCinTest()
+{
+	int num1, num2;
+
+	std::cout << "Please Input num1 : ";
+	std::cin >> num1;
+
+	std::cout << "Please Input num2 : ";
+	std::cin >> num2;
+
+	std::cout << "num1 : " << num1 << std::endl;
+	std::cout << "num2 : " << num2 << std::endl;
+
+	std::cout << "num1 + num2 : ";
+	std::cout << num1 + num2 << std::endl;
 }
