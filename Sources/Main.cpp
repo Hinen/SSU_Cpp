@@ -1,4 +1,5 @@
 #include <iostream>
+#include "stdafx.h"
 
 //
 using namespace std;
@@ -6,7 +7,7 @@ using namespace std;
 //
 #define Main main
 
-int Main() 
-{
+int Main() {
+
 	return 1;
 }
