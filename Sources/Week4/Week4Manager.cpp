@@ -15,7 +15,8 @@ void Week4Manager::Main()
 	std::cout << "Week 4 Main Start" << std::endl;
 
 	//stdCoutTest();
-	stdCinTest();
+	//stdCinTest();
+	cppDataTypeTest();
 }
 
 // private func
@@ -45,4 +46,35 @@ void Week4Manager::stdCinTest()
 
 	std::cout << "num1 + num2 : ";
 	std::cout << num1 + num2 << std::endl;
+}
+
+void Week4Manager::cppDataTypeTest()
+{
+	char c = 'c';
+	
+	short s = 10;
+	int i = 20;
+	long l = 30;
+	long long ll = 40;
+
+	float f = 3.5f;
+	double d = 5.6;
+
+	std::cout << "Print Data Value" << std::endl;
+	std::cout << "char c : " << c << std::endl;
+	std::cout << "short s : " << s << std::endl;
+	std::cout << "int i : " << i << std::endl;
+	std::cout << "long l : " << l << std::endl;
+	std::cout << "long long ll : " << ll << std::endl;
+	std::cout << "float f : " << f << std::endl;
+	std::cout << "double d : " << d << std::endl;
+
+	std::cout << "\nPrint Data Type Size (byte)" << std::endl;
+	std::cout << "char c size : " << sizeof(c) << std::endl;
+	std::cout << "short s size : " << sizeof(s) << std::endl;
+	std::cout << "int i size : " << sizeof(i) << std::endl;
+	std::cout << "long l size : " << sizeof(l) << std::endl;
+	std::cout << "long long ll size : " << sizeof(ll) << std::endl;
+	std::cout << "float f size : " << sizeof(f) << std::endl;
+	std::cout << "double d size : " << sizeof(d) << std::endl;
 }
