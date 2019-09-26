@@ -8,5 +8,8 @@ public:
 	~Week4Manager();
 
 	void Main();
+
+private:
+	void stdCoutTest();
 };
 
