@@ -1,4 +1,5 @@
-#include "stdafx.h"
+#include "Stdafx.h"
+#include "Manager.h"
 
 //
 using namespace std;
