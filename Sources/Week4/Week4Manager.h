@@ -10,8 +10,9 @@ public:
 	void Main();
 
 private:
-	void stdCoutTest();
-	void stdCinTest();
-	void cppDataTypeTest();
+	void StdCoutTest();
+	void StdCinTest();
+	void CppDataTypeTest();
+	void ConditionTest();
 };
 

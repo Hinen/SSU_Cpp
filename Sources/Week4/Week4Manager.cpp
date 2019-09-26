@@ -16,11 +16,12 @@ void Week4Manager::Main()
 
 	//stdCoutTest();
 	//stdCinTest();
-	cppDataTypeTest();
+	//CppDataTypeTest();
+	ConditionTest();
 }
 
 // private func
-void Week4Manager::stdCoutTest()
+void Week4Manager::StdCoutTest()
 {
 	std::cout << 7;
 	std::cout << 8;
@@ -31,7 +32,7 @@ void Week4Manager::stdCoutTest()
 	std::cout << 2;
 }
 
-void Week4Manager::stdCinTest()
+void Week4Manager::StdCinTest()
 {
 	int num1 = 0, num2 = 0;
 
@@ -48,7 +49,7 @@ void Week4Manager::stdCinTest()
 	std::cout << num1 + num2 << std::endl;
 }
 
-void Week4Manager::cppDataTypeTest()
+void Week4Manager::CppDataTypeTest()
 {
 	char c = 'c';
 	
@@ -77,4 +78,16 @@ void Week4Manager::cppDataTypeTest()
 	std::cout << "long long ll size : " << sizeof(ll) << std::endl;
 	std::cout << "float f size : " << sizeof(f) << std::endl;
 	std::cout << "double d size : " << sizeof(d) << std::endl;
+}
+
+void Week4Manager::ConditionTest()
+{
+	int a = 10, b = 20;
+
+	if (a > b)
+		std::cout << a << std::endl;
+	else if (a < b)
+		std::cout << b << std::endl;
+	else
+		std::cout << "a, b is same" << std::endl;
 }
