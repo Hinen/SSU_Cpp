@@ -1,12 +1,11 @@
-#include "stdafx.h"
+#include "Stdafx.h"
+#include "Manager.h"
 
 //
 using namespace std;
 
 //
-#define Main main
-
-int Main() {
+int main() {
 
 	return 1;
 }
