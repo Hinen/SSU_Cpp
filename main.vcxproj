@@ -151,7 +151,8 @@
     <ClCompile Include="Sources\Week4\Week4Manager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Sources\stdafx.h" />
+    <ClInclude Include="Sources\Manager.h" />
+    <ClInclude Include="Sources\Stdafx.h" />
     <ClInclude Include="Sources\Week4\Week4Manager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
