@@ -2,10 +2,12 @@
 
 Week4Manager::Week4Manager()
 {
+	std::cout << "Initializing Week4Manager..." << std::endl;
 }
 
 Week4Manager::~Week4Manager()
 {
+	std::cout << "Terminating Week4Manager..." << std::endl;
 }
 
 void Week4Manager::Main()
