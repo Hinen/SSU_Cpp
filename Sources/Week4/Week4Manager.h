@@ -14,5 +14,6 @@ private:
 	void StdCinTest();
 	void CppDataTypeTest();
 	void ConditionTest();
+	void RepeatTest();
 };
 

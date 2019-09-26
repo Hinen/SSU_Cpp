@@ -17,7 +17,8 @@ void Week4Manager::Main()
 	//stdCoutTest();
 	//stdCinTest();
 	//CppDataTypeTest();
-	ConditionTest();
+	//ConditionTest();
+	RepeatTest();
 }
 
 // private func
@@ -90,4 +91,21 @@ void Week4Manager::ConditionTest()
 		std::cout << b << std::endl;
 	else
 		std::cout << "a, b is same" << std::endl;
+}
+
+void Week4Manager::RepeatTest()
+{
+	int num1 = 0;
+
+	for (int i = 0; i < 10; i++)
+	{
+		num1++;
+		std::cout << "for num1 : " << num1 << std::endl;
+	}
+
+	while (num1 < 20)
+	{
+		num1++;
+		std::cout << "while num1 : " << num1 << std::endl;
+	}
 }
