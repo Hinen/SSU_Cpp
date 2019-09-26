@@ -32,7 +32,7 @@ void Week4Manager::stdCoutTest()
 
 void Week4Manager::stdCinTest()
 {
-	int num1, num2;
+	int num1 = 0, num2 = 0;
 
 	std::cout << "Please Input num1 : ";
 	std::cin >> num1;
