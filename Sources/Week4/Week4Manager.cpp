@@ -108,4 +108,21 @@ void Week4Manager::RepeatTest()
 		num1++;
 		std::cout << "while num1 : " << num1 << std::endl;
 	}
+
+	int sum1 = 0;
+	for (int i = 1; i <= 10; i++)
+	{
+		sum1 += i;
+
+		if (i != 10)
+		{
+			std::cout << i << " + ";
+		}
+		else 
+		{
+			std::cout << i << " = ";
+		}
+	}
+
+	std::cout << sum1 << std::endl;
 }
