@@ -5,9 +5,12 @@
 using namespace std;
 
 //
-#define Main main
+int main() {
+	Week4Manager *week4Manager = new Week4Manager();
 
-int Main() {
+	week4Manager->Main();
+
+	delete week4Manager;
 
 	return 1;
 }

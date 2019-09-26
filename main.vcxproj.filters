@@ -13,15 +13,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="헤더 파일\Week4">
+      <UniqueIdentifier>{d4d1ba79-dcb1-49a9-802f-38a4df8e654f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Week4">
+      <UniqueIdentifier>{95839233-bb61-41ae-8dd6-dd0843051729}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\Main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Sources\Week4\Week4Manager.cpp">
+      <Filter>소스 파일\Week4</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\stdafx.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week4\Week4Manager.h">
+      <Filter>헤더 파일\Week4</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
