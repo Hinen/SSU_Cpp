@@ -32,4 +32,5 @@
 *.app
 *.opendb
 
-/Cpp/Debug
+/Debug
+/.vs
