@@ -7,18 +7,21 @@ public:
 	Week6Manager();
 	~Week6Manager();
 
-	void Main();
-
-private:
-	void StructTest();
-
 private:
 	struct TestStruct {
 		int i;
 		float f;
 		char c;
 	};
-
 	struct TestStruct _testStruct;
-};
 
+	//
+	int* p;
+
+public:
+	void Main();
+
+private:
+	void StructTest();
+	void DynamicTest();
+};
