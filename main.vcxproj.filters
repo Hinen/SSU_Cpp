@@ -36,6 +36,9 @@
     <ClCompile Include="Sources\Week6\Week6Manager.cpp">
       <Filter>소스 파일\Week6</Filter>
     </ClCompile>
+    <ClCompile Include="Sources\WeekManagerBase.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\Stdafx.h">
@@ -49,6 +52,9 @@
     </ClInclude>
     <ClInclude Include="Sources\Week6\Week6Manager.h">
       <Filter>헤더 파일\Week6</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\WeekManagerBase.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

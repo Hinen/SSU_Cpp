@@ -1,24 +1,13 @@
 #include "Week4Manager.h"
 
-Week4Manager::Week4Manager()
+Week4Manager::Week4Manager(): WeekManagerBase(4)
 {
-	std::cout << "Initializing Week4Manager..." << std::endl;
+	
 }
 
 Week4Manager::~Week4Manager()
 {
-	std::cout << "Terminating Week4Manager..." << std::endl;
-}
-
-void Week4Manager::Main()
-{
-	std::cout << "Week 4 Main Start" << std::endl;
-
-	//stdCoutTest();
-	//stdCinTest();
-	//CppDataTypeTest();
-	//ConditionTest();
-	RepeatTest();
+	
 }
 
 // private func
