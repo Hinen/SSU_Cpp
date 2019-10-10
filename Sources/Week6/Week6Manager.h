@@ -11,5 +11,14 @@ public:
 
 private:
 	void StructTest();
+
+private:
+	struct TestStruct {
+		int i;
+		float f;
+		char c;
+	};
+
+	struct TestStruct _testStruct;
 };
 
