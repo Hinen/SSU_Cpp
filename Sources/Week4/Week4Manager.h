@@ -7,6 +7,8 @@ public:
 	Week4Manager();
 	~Week4Manager();
 
+	void Main();
+
 private:
 	void StdCoutTest();
 	void StdCinTest();

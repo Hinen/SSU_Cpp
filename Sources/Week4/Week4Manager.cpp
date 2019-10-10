@@ -10,6 +10,16 @@ Week4Manager::~Week4Manager()
 	
 }
 
+void Week4Manager::Main() {
+	WeekManagerBase::Main();
+
+	//stdCoutTest();
+	//stdCinTest();
+	//CppDataTypeTest();
+	//ConditionTest();
+	RepeatTest();
+}
+
 // private func
 void Week4Manager::StdCoutTest()
 {
