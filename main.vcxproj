@@ -149,11 +149,13 @@
   <ItemGroup>
     <ClCompile Include="Sources\Main.cpp" />
     <ClCompile Include="Sources\Week4\Week4Manager.cpp" />
+    <ClCompile Include="Sources\Week6\Week6Manager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\Manager.h" />
     <ClInclude Include="Sources\Stdafx.h" />
     <ClInclude Include="Sources\Week4\Week4Manager.h" />
+    <ClInclude Include="Sources\Week6\Week6Manager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
