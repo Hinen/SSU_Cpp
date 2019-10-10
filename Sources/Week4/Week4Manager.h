@@ -7,6 +7,7 @@ public:
 	Week4Manager();
 	~Week4Manager();
 
+public:
 	void Main();
 
 private:

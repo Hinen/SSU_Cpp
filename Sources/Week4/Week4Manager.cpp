@@ -10,7 +10,8 @@ Week4Manager::~Week4Manager()
 	
 }
 
-void Week4Manager::Main() {
+void Week4Manager::Main() 
+{
 	WeekManagerBase::Main();
 
 	//stdCoutTest();
