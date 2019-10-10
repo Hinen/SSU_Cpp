@@ -19,11 +19,11 @@
     <Filter Include="소스 파일\Week4">
       <UniqueIdentifier>{95839233-bb61-41ae-8dd6-dd0843051729}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Week6">
-      <UniqueIdentifier>{85412ed5-8143-4970-a2d0-1478453ffe44}</UniqueIdentifier>
-    </Filter>
     <Filter Include="헤더 파일\Week6">
       <UniqueIdentifier>{74ecb941-39f0-48aa-b20f-bcf2033e4cb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Week6">
+      <UniqueIdentifier>{85412ed5-8143-4970-a2d0-1478453ffe44}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -41,9 +41,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Sources\Stdafx.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Sources\Manager.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -54,6 +51,9 @@
       <Filter>헤더 파일\Week6</Filter>
     </ClInclude>
     <ClInclude Include="Sources\WeekManagerBase.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Stdafx.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
