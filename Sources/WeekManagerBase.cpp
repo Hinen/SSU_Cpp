@@ -3,15 +3,15 @@
 WeekManagerBase::WeekManagerBase(int week)
 {
 	_week = week;
-	std::cout << "Initializing Week" << _week << "Manager..." << std::endl;
+	std::cout << "Initializing Week" << _week << "Manager...\n" << std::endl;
 }
 
 WeekManagerBase::~WeekManagerBase()
 {
-	std::cout << "Terminating Week" << _week << "Manager..." << std::endl;
+	std::cout << "\nTerminating Week" << _week << "Manager..." << std::endl;
 }
 
 void WeekManagerBase::Main()
 {
-	std::cout << "Week " << _week << " Main Start" << std::endl;
+	std::cout << "Week " << _week << " Main Start\n" << std::endl;
 }
