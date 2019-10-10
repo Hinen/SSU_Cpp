@@ -1,13 +1,12 @@
 #pragma once
 #include "../stdafx.h"
+#include "../WeekManagerBase.h"
 
-class Week4Manager
+class Week4Manager : public WeekManagerBase
 {
 public:
 	Week4Manager();
 	~Week4Manager();
-
-	void Main();
 
 private:
 	void StdCoutTest();
