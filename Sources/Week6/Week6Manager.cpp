@@ -55,6 +55,9 @@ void Week6Manager::DynamicTest()
 	std::cout << "P2 value adress : " << p2 << std::endl;
 
 	//
+	/* 참조자가 메모리 공간에 할동이 되는건가
+	https://hashcode.co.kr/questions/5146/%EC%B0%B8%EC%A1%B0%EC%9E%90%EB%8F%84-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B3%B5%EA%B0%84%EC%97%90-%ED%95%A0%EB%8B%B9%EB%90%98%EB%82%98%EC%9A%94
+	*/
 	int& ref = *p;
 	ref = 1000;
 
