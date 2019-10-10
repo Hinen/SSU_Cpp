@@ -8,5 +8,8 @@ public:
 	~Week6Manager();
 
 	void Main();
+
+private:
+	void StructTest();
 };
 

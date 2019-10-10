@@ -10,6 +10,14 @@ Week6Manager::~Week6Manager()
 
 }
 
-void Week6Manager::Main() {
+void Week6Manager::Main() 
+{
 	WeekManagerBase::Main();
+
+	StructTest();
+}
+
+void Week6Manager::StructTest() 
+{
+
 }
