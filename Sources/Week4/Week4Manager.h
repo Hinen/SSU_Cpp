@@ -1,5 +1,4 @@
 #pragma once
-#include "../stdafx.h"
 #include "../WeekManagerBase.h"
 
 class Week4Manager : public WeekManagerBase
