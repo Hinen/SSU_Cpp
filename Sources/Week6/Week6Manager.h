@@ -1,7 +1,7 @@
 #pragma once
-#include "../stdafx.h"
+#include "../WeekManagerBase.h"
 
-class Week6Manager
+class Week6Manager : public WeekManagerBase
 {
 public:
 	Week6Manager();
