@@ -1,6 +1,6 @@
 #include "Week4Manager.h"
 
-Week4Manager::Week4Manager(): WeekManagerBase(4)
+Week4Manager::Week4Manager() : WeekManagerBase(4)
 {
 	
 }
