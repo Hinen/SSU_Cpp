@@ -2,11 +2,12 @@
 
 Week7Manager::Week7Manager() : WeekManagerBase(7)
 {
+	// DO NOTHING
 }
-
 
 Week7Manager::~Week7Manager()
 {
+	// DO NOTHING
 }
 
 void Week7Manager::Main() 
