@@ -12,5 +12,9 @@ public:
 
 private:
 	void RefTest();
+	void SwapTest();
+
+	template <typename T>
+	void Swap(T* var1, T* var2);
 };
 
