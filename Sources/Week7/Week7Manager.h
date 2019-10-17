@@ -15,6 +15,12 @@ private:
 	void SwapTest();
 
 	template <typename T>
-	void Swap(T* var1, T* var2);
+	void PrintValueData(T var1, T var2);
+
+	template <typename T>
+	void SwapPointingValue(T* var1, T* var2);
+
+	template <typename T>
+	void SwapPointingAddress(T** var1, T** var2);
 };
 

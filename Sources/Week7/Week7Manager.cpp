@@ -29,19 +29,39 @@ void Week7Manager::SwapTest()
 {
 	int* num1 = new int(10);
 	int* num2 = new int(20);
-	std::cout << *num1 << ", " << *num2 << std::endl;
+	PrintValueData(num1, num2);
 
-	Swap(num1, num2);
-	std::cout << *num1 << ", " << *num2 << std::endl;
+	SwapPointingValue(num1, num2);
+	PrintValueData(num1, num2);
+
+	SwapPointingAddress(&num1, &num2);
+	PrintValueData(num1, num2);
 
 	delete num1;
 	delete num2;
 }
 
 template <typename T>
-void Week7Manager::Swap(T* var1, T* var2)
+void Week7Manager::PrintValueData(T var1, T var2)
+{
+	std::cout << "Value : " << var1 << ", " << var2 << std::endl;
+	std::cout << "Value Adress : " << &var1 << ", " << &var2 << std::endl;
+	std::cout << "Pointing Value : " << *var1 << ", " << *var2 << std::endl;
+	std::cout << "Pointing Adress : " << &(*var1) << ", " << &(*var2) << "\n"  << std::endl;
+}
+
+template <typename T>
+void Week7Manager::SwapPointingValue(T* var1, T* var2)
 {
 	T temp = *var1;
+	*var1 = *var2;
+	*var2 = temp;
+}
+
+template <typename T>
+void Week7Manager::SwapPointingAddress(T** var1, T** var2)
+{
+	T* temp = *var1;
 	*var1 = *var2;
 	*var2 = temp;
 }
