@@ -9,5 +9,8 @@ public:
 
 public:
 	void Main();
+
+private:
+	void RefTest();
 };
 
