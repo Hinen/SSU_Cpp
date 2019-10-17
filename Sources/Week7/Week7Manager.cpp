@@ -44,10 +44,9 @@ void Week7Manager::SwapTest()
 template <typename T>
 void Week7Manager::PrintValueData(T var1, T var2)
 {
-	std::cout << "Value : " << var1 << ", " << var2 << std::endl;
-	std::cout << "Value Adress : " << &var1 << ", " << &var2 << std::endl;
 	std::cout << "Pointing Value : " << *var1 << ", " << *var2 << std::endl;
-	std::cout << "Pointing Adress : " << &(*var1) << ", " << &(*var2) << "\n"  << std::endl;
+	std::cout << "Pointing Adress : " << var1 << ", " << var2 << std::endl;
+	std::cout << "Pointer Adress : " << &var1 << ", " << &var2 << "\n" << std::endl;
 }
 
 template <typename T>
