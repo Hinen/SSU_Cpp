@@ -25,6 +25,12 @@
     <Filter Include="소스 파일\Week6">
       <UniqueIdentifier>{85412ed5-8143-4970-a2d0-1478453ffe44}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Week7">
+      <UniqueIdentifier>{63ac6277-2526-4c08-96be-01f8d299a348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Week7">
+      <UniqueIdentifier>{3f18bc84-b2f3-4f3b-b2db-ac69c9e1bc56}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\Main.cpp">
@@ -38,6 +44,9 @@
     </ClCompile>
     <ClCompile Include="Sources\WeekManagerBase.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Week7\Week7Manager.cpp">
+      <Filter>소스 파일\Week7</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="Sources\Stdafx.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week7\Week7Manager.h">
+      <Filter>헤더 파일\Week7</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
