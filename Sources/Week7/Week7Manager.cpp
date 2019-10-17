@@ -15,7 +15,8 @@ void Week7Manager::Main()
 	WeekManagerBase::Main();
 
 	//RefTest();
-	SwapTest();
+	//SwapTest();
+	DefaultParamTest(0);
 }
 
 void Week7Manager::RefTest()
@@ -39,6 +40,13 @@ void Week7Manager::SwapTest()
 
 	delete num1;
 	delete num2;
+}
+
+void Week7Manager::DefaultParamTest(int num1, int num2, int num3)
+{
+	// 아니 무슨 헤더 선언에는 Default 값 넣으면서 정의에는 넣으면 안돼?
+	// 아니 그러면 함수 정의만 봤을땐 Default 값이 있는지 어캐 알아 ㅠㅠ
+	std::cout << num1 + num2 + num3 << std::endl;
 }
 
 template <typename T>
