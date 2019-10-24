@@ -13,4 +13,19 @@ Week8Manager::~Week8Manager()
 void Week8Manager::Main()
 {
 	WeekManagerBase::Main();
+
+	ClassTest();
+}
+
+void Week8Manager::ClassTest()
+{
+	_testClass = new TestClass(97, 's');
+	_testClass->TestFunction();
+
+	delete _testClass;
+}
+
+void Week8Manager::TestClass::TestFunction()
+{
+	std::cout << this->i << " " << this->c << std::endl;
 }
