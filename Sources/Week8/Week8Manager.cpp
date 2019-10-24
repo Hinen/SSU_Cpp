@@ -19,13 +19,25 @@ void Week8Manager::Main()
 
 void Week8Manager::ClassTest()
 {
-	_testClass = new TestClass(97, 's');
-	_testClass->TestFunction();
+	_testClass.TestFunction();	// not inited
 
-	delete _testClass;
+	_testClass.TestClassInit(26, 'b');
+	_testClass.TestFunction();
+
+	//
+	_testClassPtr = new TestClass(97, 's');
+	_testClassPtr->TestFunction();
+
+	delete _testClassPtr;
 }
 
 void Week8Manager::TestClass::TestFunction()
 {
-	std::cout << this->i << " " << this->c << std::endl;
+	if (!_isInited)
+	{
+		std::cout << "Test class need init!!" << std::endl;
+		return;
+	}
+
+	std::cout << this->_i << " " << this->_c << std::endl;
 }

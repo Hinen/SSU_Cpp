@@ -11,18 +11,22 @@ protected:
 	class TestClass
 	{
 	public:
-		TestClass(int i, char c) 
-		{ 
-			this->i = i;
-			this->c = c;
-		};
+		TestClass() {};
+		TestClass(int i, char c) { this->TestClassInit(i, c); };
 		~TestClass() {};
 
-	public:
-		int i;
-		char c;
+	private:
+		int _i;
+		char _c;
+		bool _isInited;
 
 	public:
+		void TestClassInit(int i, char c)
+		{
+			_i = i;
+			_c = c;
+			_isInited = true;
+		}
 		void TestFunction();
 	};
 
@@ -30,9 +34,10 @@ public:
 	void Main();
 
 private:
-	void ClassTest();
+	TestClass _testClass;
+	TestClass* _testClassPtr;
 
 private:
-	TestClass* _testClass;
+	void ClassTest();
 };
 
