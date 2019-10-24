@@ -11,9 +11,9 @@ protected:
 	class TestClass
 	{
 	public:
-		TestClass() {};
-		TestClass(int i, char c) { this->TestClassInit(i, c); };
-		~TestClass() {};
+		TestClass() {}
+		TestClass(int i, char c) { this->TestClassInit(i, c); }
+		~TestClass() {}
 
 	private:
 		int _i;
