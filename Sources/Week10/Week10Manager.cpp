@@ -132,6 +132,7 @@ void Week10Manager::Account::Withdraw(int value)
 
 	ShowAccountInfo();
 }
+
 void Week10Manager::Account::ShowAccountInfo()
 {
 	std::cout << _accountNumber << " 계좌의 남은 금액 : " << _value << "\n" << std::endl;
