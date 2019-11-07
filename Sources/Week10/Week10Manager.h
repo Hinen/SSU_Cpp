@@ -41,6 +41,23 @@ protected:
 		void TurnOff();
 	};
 
+	//
+	class Account
+	{
+	public:
+		Account(int accountNumber, int value);
+
+	private:
+		int _accountNumber;
+		int _value;
+
+	public:
+		void Deposite(int value);
+		void Withdraw(int value);
+
+		void ShowAccountInfo();
+	};
+
 public:
 	void Main();
 
@@ -50,7 +67,11 @@ private:
 	//
 	Lamp* _lamp;
 
+	//
+	Account* _account;
+
 private:
 	void StudentClassTest();
 	void LampClassTest();
+	void AccountClassTest();
 };
