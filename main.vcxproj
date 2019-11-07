@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Sources\Main.cpp" />
+    <ClCompile Include="Sources\Week10\Week10Manager.cpp" />
     <ClCompile Include="Sources\Week4\Week4Manager.cpp" />
     <ClCompile Include="Sources\Week6\Week6Manager.cpp" />
     <ClCompile Include="Sources\Week7\Week7Manager.cpp" />
@@ -157,6 +158,7 @@
   <ItemGroup>
     <ClInclude Include="Sources\Manager.h" />
     <ClInclude Include="Sources\Stdafx.h" />
+    <ClInclude Include="Sources\Week10\Week10Manager.h" />
     <ClInclude Include="Sources\Week4\Week4Manager.h" />
     <ClInclude Include="Sources\Week6\Week6Manager.h" />
     <ClInclude Include="Sources\Week7\Week7Manager.h" />
