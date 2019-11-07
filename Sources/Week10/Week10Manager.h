@@ -27,12 +27,30 @@ protected:
 		static void ShowMaxGrade();
 	};
 
+	//
+	class Lamp
+	{
+	public:
+		Lamp(int id);
+
+	private:
+		int _id;
+
+	public:
+		void TurnOn();
+		void TurnOff();
+	};
+
 public:
 	void Main();
 
 private:
 	std::vector<Student*>* _studentVector;
 
+	//
+	Lamp* _lamp;
+
 private:
 	void StudentClassTest();
+	void LampClassTest();
 };
