@@ -27,7 +27,7 @@ public:
 	void Main();
 
 private:
-	Student *_student;
+	std::vector<Student*>* _studentVector;
 
 private:
 	void StudentClassTest();

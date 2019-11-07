@@ -19,11 +19,22 @@ void Week10Manager::Main()
 
 void Week10Manager::StudentClassTest()
 {
-	_student = new Student(20192762);
+	_studentVector = new std::vector<Student*>();
 
-	_student->ShowStudentID();
+	_studentVector->push_back(new Student(20192762));
+	_studentVector->push_back(new Student(12345678));
+	_studentVector->push_back(new Student(99999999));
 
-	delete _student;
+	for (auto it = _studentVector->begin(); it != _studentVector->end(); it++)
+	{
+		auto student = *it;
+
+		student->ShowStudentID();
+
+		delete student;
+	}
+
+	delete _studentVector;
 }
 
 void Week10Manager::Student::ShowStudentID()
