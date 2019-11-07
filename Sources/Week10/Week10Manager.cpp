@@ -19,6 +19,8 @@ void Week10Manager::Main()
 
 void Week10Manager::StudentClassTest()
 {
+	Student::ShowMaxGrade();
+
 	_studentVector = new std::vector<Student*>();
 
 	_studentVector->push_back(new Student(20192762));
@@ -47,4 +49,9 @@ int Week10Manager::Student::GetStudentID() const
 void Week10Manager::Student::ShowStudentID()
 {
 	std::cout << _studentID << std::endl;
+}
+
+void Week10Manager::Student::ShowMaxGrade()
+{
+	std::cout << "Max Grade : " << _maxGrade << std::endl;
 }

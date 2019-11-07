@@ -18,10 +18,13 @@ protected:
 
 	private:
 		int _studentID;
+		static const int _maxGrade = 4;
 
 	public:
 		int GetStudentID() const;
 		void ShowStudentID();
+
+		static void ShowMaxGrade();
 	};
 
 public:
