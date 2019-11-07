@@ -57,9 +57,10 @@ void Week10Manager::AccountClassTest()
 	_account = new Account(20192762, 500000);
 
 	_account->Deposite(5000);
-	_account->Deposite(1000);
+	_account->Deposite(-5000);
 
 	_account->Withdraw(100000);
+	_account->Withdraw(-100000);
 	_account->Withdraw(99999999);
 
 	_account->ShowAccountInfo();
@@ -112,23 +113,37 @@ Week10Manager::Account::Account(int accountNumber, int value)
 
 void Week10Manager::Account::Deposite(int value)
 {
-	this->_value += value;
-	std::cout << _accountNumber << " 계좌에 " << value << " 금액 입금 완료!" << std::endl;
+	if (value <= 0)
+	{
+		std::cout << _accountNumber << " 계좌에 " << value << " 금액 입금 실패! ";
+		std::cout << "0보다 작은 금액은 입금 할 수 없습니다." << std::endl;
+	} 
+	else
+	{ 
+		this->_value += value;
+		std::cout << _accountNumber << " 계좌에 " << value << " 금액 입금 완료!" << std::endl;
+	}
 
 	ShowAccountInfo();
 }
 
 void Week10Manager::Account::Withdraw(int value)
 {
-	if (value > this->_value)
+	if (value <= 0)
 	{
-		std::cout << _accountNumber << " 계좌에 " << value << " 금액 출금 실패!" << std::endl;
-		std::cout << "보유한 금액보다 더 큰 금액은 출금 할 수 없습니다.\n" << std::endl;
-		return;
+		std::cout << _accountNumber << " 계좌에 " << value << " 금액 출금 실패! ";
+		std::cout << "0보다 작은 금액은 출금 할 수 없습니다." << std::endl;
 	}
-
-	this->_value -= value;
-	std::cout << _accountNumber << " 계좌에 " << value << " 금액 출금 완료!" << std::endl;
+	else if (value > this->_value)
+	{
+		std::cout << _accountNumber << " 계좌에 " << value << " 금액 출금 실패! ";
+		std::cout << "보유한 금액보다 더 큰 금액은 출금 할 수 없습니다." << std::endl;
+	}
+	else
+	{
+		this->_value -= value;
+		std::cout << _accountNumber << " 계좌에 " << value << " 금액 출금 완료!" << std::endl;
+	}
 
 	ShowAccountInfo();
 }
