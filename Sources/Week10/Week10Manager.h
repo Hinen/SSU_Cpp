@@ -20,6 +20,7 @@ protected:
 		int _studentID;
 
 	public:
+		int GetStudentID() const;
 		void ShowStudentID();
 	};
 

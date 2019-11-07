@@ -30,11 +30,18 @@ void Week10Manager::StudentClassTest()
 		auto student = *it;
 
 		student->ShowStudentID();
+		std::cout << student->GetStudentID() << std::endl;
 
 		delete student;
 	}
 
 	delete _studentVector;
+}
+
+int Week10Manager::Student::GetStudentID() const
+{
+	// _studentID = 10; // const functon can not write
+	return _studentID;
 }
 
 void Week10Manager::Student::ShowStudentID()
