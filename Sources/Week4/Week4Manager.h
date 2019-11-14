@@ -8,7 +8,7 @@ public:
 	~Week4Manager();
 
 public:
-	void Main();
+	virtual void Main() override;
 
 private:
 	void StdCoutTest();

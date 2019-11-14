@@ -59,7 +59,7 @@ protected:
 	};
 
 public:
-	void Main();
+	virtual void Main() override;
 
 private:
 	std::vector<Student*>* _studentVector;

@@ -8,7 +8,7 @@ public:
 	~Week7Manager();
 
 public:
-	void Main();
+	virtual void Main() override;
 
 private:
 	void RefTest();

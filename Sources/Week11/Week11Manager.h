@@ -94,7 +94,7 @@ protected:
 	};
 
 public:
-	void Main();
+	virtual void Main() override;
 
 private:
 	Human *_human;
