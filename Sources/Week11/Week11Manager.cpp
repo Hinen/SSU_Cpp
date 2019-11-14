@@ -14,7 +14,8 @@ void Week11Manager::Main()
 {
 	WeekManagerBase::Main();
 
-	HumanClassTest();
+	//HumanClassTest();
+	AnimalClassTest();
 }
 
 void Week11Manager::HumanClassTest()
@@ -37,4 +38,25 @@ void Week11Manager::HumanClassTest()
 
 	delete _kgiYoon;
 	delete _human;
+}
+
+void Week11Manager::AnimalClassTest()
+{
+	int selection;
+
+	std::cout << "1 : 새, 2 : 물고기 ";
+	std::cin >> selection;
+
+	if (selection == 1)
+	{
+		_bird = new Bird();
+		_bird->PrintWingState();
+		delete _bird;
+	}
+	else
+	{
+		_fish = new Fish();
+		_fish->PrintFinState();
+		delete _fish;
+	}
 }

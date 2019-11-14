@@ -43,6 +43,40 @@ protected:
 		}
 	};
 
+	//
+	class Animal
+	{
+	public:
+		void breath()
+		{
+			std::cout << "Breathing Animal" << std::endl;
+		}
+
+	protected:
+		void Move()
+		{
+			std::cout << "Moving Animal" << std::endl;
+		}
+	};
+
+	class Bird : public Animal
+	{
+	public:
+		void PrintWingState()
+		{
+			std::cout << "Bird has wing" << std::endl;
+		}
+	};
+
+	class Fish : public Animal
+	{
+	public:
+		void PrintFinState()
+		{
+			std::cout << "Bird has fin" << std::endl;
+		}
+	};
+
 public:
 	void Main();
 
@@ -50,6 +84,11 @@ private:
 	Human *_human;
 	KgiYoon *_kgiYoon;
 
+	//
+	Bird *_bird;
+	Fish *_fish;
+
 private:
 	void HumanClassTest();
+	void AnimalClassTest();
 };
