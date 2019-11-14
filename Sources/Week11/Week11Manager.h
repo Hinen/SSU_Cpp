@@ -47,12 +47,14 @@ protected:
 	class Animal
 	{
 	public:
+		virtual void PrintState() = 0;
+
+	protected:
 		void breath()
 		{
 			std::cout << "Breathing Animal" << std::endl;
 		}
 
-	protected:
 		void Move()
 		{
 			std::cout << "Moving Animal" << std::endl;
@@ -62,6 +64,13 @@ protected:
 	class Bird : public Animal
 	{
 	public:
+		void PrintState()
+		{
+			PrintWingState();
+			breath();
+		}
+
+	private:
 		void PrintWingState()
 		{
 			std::cout << "Bird has wing" << std::endl;
@@ -71,9 +80,16 @@ protected:
 	class Fish : public Animal
 	{
 	public:
+		void PrintState()
+		{
+			PrintFinState();
+			Move();
+		}
+
+	private:
 		void PrintFinState()
 		{
-			std::cout << "Bird has fin" << std::endl;
+			std::cout << "Fish has fin" << std::endl;
 		}
 	};
 
@@ -85,6 +101,7 @@ private:
 	KgiYoon *_kgiYoon;
 
 	//
+	Animal *_animal;
 	Bird *_bird;
 	Fish *_fish;
 

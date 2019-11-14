@@ -47,16 +47,27 @@ void Week11Manager::AnimalClassTest()
 	std::cout << "1 : 새, 2 : 물고기 ";
 	std::cin >> selection;
 
+	/* This code is stupid
 	if (selection == 1)
 	{
 		_bird = new Bird();
-		_bird->PrintWingState();
+		_bird->PrintState();
 		delete _bird;
 	}
 	else
 	{
 		_fish = new Fish();
-		_fish->PrintFinState();
+		_fish->PrintState();
 		delete _fish;
 	}
+	*/
+
+	if (selection == 1)
+		_animal = new Bird();
+	else
+		_animal = new Fish();
+
+	_animal->PrintState();
+
+	delete _animal;
 }
