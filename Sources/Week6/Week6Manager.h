@@ -19,7 +19,7 @@ private:
 	int* p;
 
 public:
-	void Main();
+	virtual void Main() override;
 
 private:
 	void StructTest();
