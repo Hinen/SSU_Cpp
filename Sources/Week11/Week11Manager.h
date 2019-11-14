@@ -64,7 +64,7 @@ protected:
 	class Bird : public Animal
 	{
 	public:
-		void PrintState()
+		virtual void PrintState() override
 		{
 			PrintWingState();
 			breath();
@@ -80,7 +80,7 @@ protected:
 	class Fish : public Animal
 	{
 	public:
-		void PrintState()
+		virtual void PrintState() override
 		{
 			PrintFinState();
 			Move();
