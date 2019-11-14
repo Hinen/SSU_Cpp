@@ -14,6 +14,21 @@ protected:
 		void kill1()
 		{
 			std::cout << "Human kill 1" << std::endl;
+
+			Kill3();
+			Kill4();
+		}
+
+	protected:
+		void Kill4()
+		{
+			std::cout << "Human kill 4" << std::endl;
+		}
+
+	private:
+		void Kill3()
+		{
+			std::cout << "Human kill 3" << std::endl;
 		}
 	};
 
@@ -23,6 +38,8 @@ protected:
 		void kill2()
 		{
 			std::cout << "KgiYoon kill 2" << std::endl;
+
+			Kill4();
 		}
 	};
 
