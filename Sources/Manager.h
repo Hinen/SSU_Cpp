@@ -5,3 +5,4 @@
 #include "Week7\Week7Manager.h"
 #include "Week8\Week8Manager.h"
 #include "Week10\Week10Manager.h"
+#include "Week11\Week11Manager.h"
