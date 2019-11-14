@@ -62,10 +62,8 @@ void Week11Manager::AnimalClassTest()
 	}
 	*/
 
-	if (selection == 1)
-		_animal = new Bird();
-	else
-		_animal = new Fish();
+	// Æí - ¾È
+	_animal = selection == 1 ? (Animal*)new Bird() : (Animal*)new Fish();
 
 	_animal->PrintState();
 
