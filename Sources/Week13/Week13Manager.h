@@ -8,60 +8,70 @@ public:
 	~Week13Manager();
 
 private:
+	class AttackInterface
+	{
+	public:
+		virtual void Attack(std::string name) = 0;
+	};
+
+	class MoveInterface
+	{
+	public:
+		virtual void Move(std::string name) = 0;
+	};
+
+	class PunchAttack : public AttackInterface
+	{
+	public:
+		void Attack(std::string name) override;
+	};
+
+	class MissileAttack : public AttackInterface
+	{
+	public:
+		void Attack(std::string name) override;
+	};
+
+	class WalkingMove : public MoveInterface
+	{
+	public:
+		void Move(std::string name) override;
+	};
+
+	class FlyingMove : public MoveInterface
+	{
+	public:
+		void Move(std::string name) override;
+	};
+
 	class Robot
 	{
 	private:
 		std::string _name;
 
-	public:
-		Robot(std::string name)
-		{
-			_name = name;
-		}
+		AttackInterface *_attItf = nullptr;
+		MoveInterface *_moveItf = nullptr;
 
 	public:
-		std::string GetName()
-		{
-			return _name;
-		}
+		Robot(std::string name, AttackInterface *attItf, MoveInterface *moveItf);
+		~Robot();
 
-		virtual void Attack()
-		{
-			std::cout << "Robot Attack!" << std::endl;
-		}
-
-		virtual void Move()
-		{
-			std::cout << "Robot Move!" << std::endl;
-		}
+	public:
+		std::string GetName();
+		void Attack();
+		void Move();
 	};
 
 	class TeaGunV : public Robot
 	{
 	public:
-		TeaGunV(std::string name) : Robot(name)
-		{
-			// DO NOTHING
-		}
-
-		void Attack() override
-		{
-			std::cout << "TeaGunV Attack" << std::endl;
-		}
+		TeaGunV(std::string name, AttackInterface *attItf, MoveInterface *moveItf);
 	};
 
 	class Atom : public Robot
 	{
 	public:
-		Atom(std::string name) : Robot(name)
-		{
-			// DO NOTHING
-		}
-
-		void Attack() override
-		{
-			std::cout << "Atom Attack" << std::endl;
-		}
+		Atom(std::string name, AttackInterface *attItf, MoveInterface *moveItf);
 	};
 
 public:
