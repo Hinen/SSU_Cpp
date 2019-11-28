@@ -43,6 +43,11 @@ private:
 		{
 			// DO NOTHING
 		}
+
+		void Attack() override
+		{
+			std::cout << "TeaGunV Attack" << std::endl;
+		}
 	};
 
 	class Atom : public Robot
@@ -51,6 +56,11 @@ private:
 		Atom(std::string name) : Robot(name)
 		{
 			// DO NOTHING
+		}
+
+		void Attack() override
+		{
+			std::cout << "Atom Attack" << std::endl;
 		}
 	};
 
