@@ -30,12 +30,12 @@ void Week14Manager::DecoratorPattern()
 
 	//
 	std::cout << "\n" << std::endl;
-	DpsHpsDisplayDecorator *dpsHpsDisplayDecorator = new DpsHpsDisplayDecorator(hineDisplay);
-	dpsHpsDisplayDecorator->DrawDisplay();
+	HpsDisplayDecorator *hpsDisplayDecorator = new HpsDisplayDecorator(dpsDisplayDecorator);
+	hpsDisplayDecorator->DrawDisplay();
 
 	delete hineDisplay;
 	delete dpsDisplayDecorator;
-	delete dpsHpsDisplayDecorator;
+	delete hpsDisplayDecorator;
 }
 
 // Hinen Display
@@ -63,10 +63,10 @@ void Week14Manager::DpsDisplayDecorator::DrawDisplay()
 	std::cout << "Dps Display Draw" << std::endl;
 }
 
-// Hps (Dps include)
-void Week14Manager::DpsHpsDisplayDecorator::DrawDisplay()
+// Hps
+void Week14Manager::HpsDisplayDecorator::DrawDisplay()
 {
-	DpsDisplayDecorator::DrawDisplay();
+	DisplayDecorator::DrawDisplay();
 
 	std::cout << "Hps Display Draw" << std::endl;
 }

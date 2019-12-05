@@ -44,10 +44,10 @@ private:
 		virtual void DrawDisplay() override;
 	};
 
-	class DpsHpsDisplayDecorator : public DpsDisplayDecorator
+	class HpsDisplayDecorator : public DpsDisplayDecorator
 	{
 	public:
-		DpsHpsDisplayDecorator(Display *display) : DpsDisplayDecorator(display)
+		HpsDisplayDecorator(Display *display) : DpsDisplayDecorator(display)
 		{
 			// DO NOTHING
 		}
