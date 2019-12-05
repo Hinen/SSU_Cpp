@@ -12,7 +12,8 @@ int main() {
 	//auto manager = new Week8Manager();
 	//auto manager = new Week10Manager();
 	//auto manager = new Week11Manager();
-	auto manager = new Week13Manager();
+	//auto manager = new Week13Manager();
+	auto manager = new Week14Manager();
 
 	manager->Main();
 

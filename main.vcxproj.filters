@@ -55,6 +55,12 @@
     <Filter Include="헤더 파일\Week13">
       <UniqueIdentifier>{0cc27ff5-15ac-4634-86bb-cfb0f3ef27b3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Week14">
+      <UniqueIdentifier>{d062abcf-be28-4b08-bb29-fbc61ad90691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Week14">
+      <UniqueIdentifier>{7b2f463b-1461-4539-ab4f-6d4f8e13c570}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\Main.cpp">
@@ -83,6 +89,9 @@
     </ClCompile>
     <ClCompile Include="Sources\Week13\Week13Manager.cpp">
       <Filter>소스 파일\Week13</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Week14\Week14Manager.cpp">
+      <Filter>소스 파일\Week14</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +124,9 @@
     </ClInclude>
     <ClInclude Include="Sources\Week13\Week13Manager.h">
       <Filter>헤더 파일\Week13</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week14\Week14Manager.h">
+      <Filter>헤더 파일\Week14</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
