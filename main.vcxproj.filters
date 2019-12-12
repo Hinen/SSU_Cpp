@@ -102,6 +102,9 @@
     <ClCompile Include="Sources\Week15\Week15Manager.cpp">
       <Filter>소스 파일\Week15</Filter>
     </ClCompile>
+    <ClCompile Include="Sources\Week15\Week15CommandPattern.cpp">
+      <Filter>소스 파일\Week15</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\Manager.h">
@@ -139,6 +142,12 @@
     </ClInclude>
     <ClInclude Include="Sources\Week15\Week15Manager.h">
       <Filter>헤더 파일\Week15</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week15\Week15CommandPattern.h">
+      <Filter>헤더 파일\Week15</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\DesignPatternBaseManager.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
