@@ -61,6 +61,12 @@
     <Filter Include="소스 파일\Week14">
       <UniqueIdentifier>{7b2f463b-1461-4539-ab4f-6d4f8e13c570}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Week15">
+      <UniqueIdentifier>{8b793ba6-f8b1-4519-ae7a-7748a00ffadf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Week15">
+      <UniqueIdentifier>{f78f27b9-e9ce-455e-bdf7-c7df3aaf1a75}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Sources\Main.cpp">
@@ -92,6 +98,15 @@
     </ClCompile>
     <ClCompile Include="Sources\Week14\Week14Manager.cpp">
       <Filter>소스 파일\Week14</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Week15\Week15Manager.cpp">
+      <Filter>소스 파일\Week15</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Week15\Week15CommandPattern.cpp">
+      <Filter>소스 파일\Week15</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Week15\Week15ObserverPattern.cpp">
+      <Filter>소스 파일\Week15</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +142,18 @@
     </ClInclude>
     <ClInclude Include="Sources\Week14\Week14Manager.h">
       <Filter>헤더 파일\Week14</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week15\Week15Manager.h">
+      <Filter>헤더 파일\Week15</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week15\Week15CommandPattern.h">
+      <Filter>헤더 파일\Week15</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\DesignPatternBaseManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Week15\Week15ObserverPattern.h">
+      <Filter>헤더 파일\Week15</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

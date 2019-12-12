@@ -15,3 +15,9 @@ void WeekManagerBase::Main()
 {
 	std::cout << "Week " << _week << " Main Start\n" << std::endl;
 }
+
+void WeekManagerBase::DoDesignPattern(DesignPatternBaseManager *patternManager)
+{
+	patternManager->PatternMain();
+	delete patternManager;
+}

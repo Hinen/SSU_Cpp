@@ -8,3 +8,4 @@
 #include "Week11\Week11Manager.h"
 #include "Week13\Week13Manager.h"
 #include "Week14\Week14Manager.h"
+#include "Week15\Week15Manager.h"
