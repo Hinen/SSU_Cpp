@@ -1,5 +1,6 @@
 #include "Week15Manager.h"
 #include "Week15CommandPattern.h"
+#include "Week15ObserverPattern.h"
 
 Week15Manager::Week15Manager() : WeekManagerBase(15)
 {
@@ -15,14 +16,6 @@ void Week15Manager::Main()
 {
 	WeekManagerBase::Main();
 
-	CommandPattern();
-}
-
-void Week15Manager::CommandPattern()
-{
-	Week15CommandPattern *commandPattern = new Week15CommandPattern();
-
-	commandPattern->PatternMain();
-
-	delete commandPattern;
+	//DoDesignPattern(new Week15CommandPattern());
+	DoDesignPattern(new Week15ObserverPattern());
 }

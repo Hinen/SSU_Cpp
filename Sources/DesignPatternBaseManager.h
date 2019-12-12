@@ -3,5 +3,6 @@
 
 class DesignPatternBaseManager
 {
+public:
 	virtual void PatternMain() = 0;
 };

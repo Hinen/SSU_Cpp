@@ -9,7 +9,4 @@ public:
 	
 public:
 	virtual void Main() override;
-
-private:
-	void CommandPattern();
 };

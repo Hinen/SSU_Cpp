@@ -154,6 +154,7 @@
     <ClCompile Include="Sources\Week14\Week14Manager.cpp" />
     <ClCompile Include="Sources\Week15\Week15CommandPattern.cpp" />
     <ClCompile Include="Sources\Week15\Week15Manager.cpp" />
+    <ClCompile Include="Sources\Week15\Week15ObserverPattern.cpp" />
     <ClCompile Include="Sources\Week4\Week4Manager.cpp" />
     <ClCompile Include="Sources\Week6\Week6Manager.cpp" />
     <ClCompile Include="Sources\Week7\Week7Manager.cpp" />
@@ -170,6 +171,7 @@
     <ClInclude Include="Sources\Week14\Week14Manager.h" />
     <ClInclude Include="Sources\Week15\Week15CommandPattern.h" />
     <ClInclude Include="Sources\Week15\Week15Manager.h" />
+    <ClInclude Include="Sources\Week15\Week15ObserverPattern.h" />
     <ClInclude Include="Sources\Week4\Week4Manager.h" />
     <ClInclude Include="Sources\Week6\Week6Manager.h" />
     <ClInclude Include="Sources\Week7\Week7Manager.h" />
